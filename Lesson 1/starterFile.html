@@ -6,23 +6,17 @@
    </style>
 </head>
 <body>
-<canvas id= "myCanvas" width="256" height="240"></canvas>
-<script type="text/javascript">
-let canvas = document.getElementById("myCanvas");
-let ctx = canvas.getContext("2d");
-//document.addEventListener("keydown",keyDownHandler, false);
-//document.addEventListener("keyup",keyUpHandler,false);
-let fps = 60;
 
-function draw () {
-   setTimeout(function() {
-   requestAnimationFrame(draw);
-   ctx.fillStyle = "rgb(20,20,20)";
-   ctx.fillRect(0,0,256,240);
-   ///all code goes here
-   },1000/fps);
-}
-draw();
+  <div class="zoom">
+    <form>
+      <label for="zoom">Zoom:</label>
+      <input type="text" id="zoom" name="zoom">
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+<canvas id= "myCanvas" width="256" height="240"></canvas>
+<script src="script.js">
 
 </script>
 </body>
